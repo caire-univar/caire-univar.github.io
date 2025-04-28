@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
@@ -24,10 +25,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>UniVaR</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo_caire-small">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -52,20 +55,29 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">UniVaR: LLM Human Value Representation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://samuelcahyawijaya.github.io/" target="_blank">Samuel Cahyawijaya</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://chendelong.world/" target="_blank">Delong Chen</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                    <a href="https://yjbang.github.io/" target="_blank"> Yejin Bang</a><sup>*</sup>,</span>
+                    <span class="author-block">Leila Khalatbari,</span>
+                    <br>
+                    <span class="author-block">
+                      <a href="https://bryanwilie.github.io/" target="_blank"> Bryan Wilie</a><sup>*</sup>,</span>
+                      <span class="author-block">
+                        Ziwei Ji</a>,</span>
+                        <span class="author-block">
+                          Etsuko Ishii</a>,</span>
+                          <span class="author-block">
+                            <a href="https://pascale.home.ece.ust.hk/" target="_blank">Pascale Fung</a><sup>*</sup></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">HKUST<br>NAACL 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -73,7 +85,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2404.07900" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,7 +95,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +103,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/HLTCHKUST/UniVaR" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,12 +118,10 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
+                  <a href="http://eez116.ece.ust.hk:7861" target="_blank"
+                  class="external-link button is-normal is-rounded">
+                  <!-- <span class="icon"><i class="fa-eye"></i></span> -->
+                  <span>Visualizer</span>
                 </a>
               </span>
             </div>
@@ -127,13 +137,14 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      <div class="columns"> 
+        <div class="column">
+
+            <img src="static/images/univar-demo-gif.gif" alt="gif" style="width: 50%; height: auto;" class="center">
+        </div>
+      </div>
+    <h2 class="subtitle has-text-centered">
+        LLM Human Value visualizer using UniVaR. The red color shows the tested LLM's value position. You can test your model with our visualizer.
       </h2>
     </div>
   </div>
@@ -148,8 +159,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            We introduce <strong>UniVaR</strong>, a high-dimensional neural representation capable of encapsulating symbolic human value distributions within Large Language Models (LLMs). UniVaR is a continuous, scalable representation learned in a self-supervised manner from value-relevant responses of 8 LLMs and evaluated across 15 open-source and commercial LLMs. By visualizing UniVaR, we shed light on the differences and similarities in value systems within LLMs, offering insights into their underlying value systems and their prioritization across different languages. This ultimately drives forward transparency and accountability in the design and deployment of LLMs. </p>
         </div>
       </div>
     </div>
@@ -157,103 +167,65 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Exploring the Human Value Embedding Map in LLMs
+          </h2>
+          <div class="columns">
+            <div class="column">
+                <img src="static/images/cultural_map.png" alt="Figure a" style="width: 80%; height: auto;" class="center">
+            </div>
           </div>
+
+          <div class="level-set has-text-justified">
+            <p>
+              UniVaR is trained through a surrogate task, called value embedding learning, to learn a compact representation that contains maximized mutual information with value-relevant aspects of LLMs while discarding other confounding factors as much as possible. With the incorporation of value-eliciting QAs, UniVaR applies multi-view self-supervised learning by maximizing mutual information across views to ensure capturing the shared value-relevant aspects across the two views while excluding other non-shared factors.
+            <br>
+            </p>
+          </div>
+          <!-- New content for figures and caption -->
+          <!-- <div class="caption">
+           <p>Value Map for LLMs</p>
+          </div> -->
+          <!-- End new content -->
+
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">UniVaR is not a Sentence Embedding
+          </h2>
+          <!-- <div class="level-set has-text-justified">
+            <p>
+              To solve this task we present DSiRe (Dataset Size Recovery), a method that recovers the dataset size directly from the LoRA weights. DSiRe leverages the spectrum of LoRA matrices to predict the number of samples used for fine-tuning. Our approach is simple yet highly effective, achieving high accuracy across a diverse datasets and models.
+            <br>
+            </p>
+          </div> -->
+          <!-- New content for figures and caption -->
+          <div class="column">
+            <img src="static/images/qa_pipeline.png" alt="experience" class="blend-img-background center-image" style="max-width: 90%; height: auto; margin-left: 5px; margin-bottom: 20px;" />
+            <p>
+            To ensure minimal sharing of linguistics aspect across views, we translate all the value-eliciting QAs to English and perform paraphrasing to avoid language-specific markers and increase the linguistics diversity. UniVaR displays a strong capability surpassing all baselines by ~15% k-NN accuracy and 10-15% linear probing accuracy@10 on the LLM value identification task. While, word and sentence embedding representations perform poorly indicating that there are significant differences between value representations from UniVaR and existing embedding representations.
+            </p>
+          </div>
+          <!-- End new content -->
+
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
-
 
 
 
@@ -265,7 +237,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/NAACL__2025___UniVaR_Poster.pdf" width="100%" height="550">
           </iframe>
         
       </div>
@@ -278,7 +250,14 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{cahyawijaya2024highdimension,
+        title={High-Dimension Human Value Representation in Large Language Models}, 
+        author={Samuel Cahyawijaya and Delong Chen and Yejin Bang and Leila Khalatbari and Bryan Wilie and Ziwei Ji and Etsuko Ishii and Pascale Fung},
+        year={2024},
+        eprint={2404.07900},
+        archivePrefix={arXiv},
+        primaryClass={id='cs.CL' full_name='Computation and Language' is_active=True alt_name='cmp-lg' in_archive='cs' is_general=False description='Covers natural language processing. Roughly includes material in ACM Subject Class I.2.7. Note that work on artificial languages (programming languages, logics, formal systems) that does not explicitly address natural-language issues broadly construed (natural-language processing, computational linguistics, speech, text retrieval, etc.) is not appropriate for this area.'}
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
