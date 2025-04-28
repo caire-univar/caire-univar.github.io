@@ -25,7 +25,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>UniVaR</title>
+  <title>Human Value in LLMs</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo_caire-small">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -55,7 +55,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">UniVaR: LLM Human Value Representation</h1>
+            <h1 class="title is-1 publication-title">High dimension representation of human values in LLMs</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -144,7 +144,7 @@
         </div>
       </div>
     <h2 class="subtitle has-text-centered">
-        LLM Human Value visualizer using UniVaR. The red color shows the tested LLM's value position. You can test your model with our visualizer.
+        LLM Human Value visualizer using our proposed high-dimension human value embedding. The red color shows the tested LLM's value position. You can test your model with our visualizer.
       </h2>
     </div>
   </div>
@@ -159,7 +159,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We introduce <strong>UniVaR</strong>, a high-dimensional neural representation capable of encapsulating symbolic human value distributions within Large Language Models (LLMs). UniVaR is a continuous, scalable representation learned in a self-supervised manner from value-relevant responses of 8 LLMs and evaluated across 15 open-source and commercial LLMs. By visualizing UniVaR, we shed light on the differences and similarities in value systems within LLMs, offering insights into their underlying value systems and their prioritization across different languages. This ultimately drives forward transparency and accountability in the design and deployment of LLMs. </p>
+            We introduce a high-dimensional neural representation capable of encapsulating symbolic human value distributions within Large Language Models (LLMs). It is a continuous, scalable representation learned in a self-supervised manner from value-relevant responses of 8 LLMs and evaluated across 15 open-source and commercial LLMs. By visualizing the human value embedding in LLMs, we shed light on the differences and similarities in value systems within LLMs, offering insights into their underlying value systems and their prioritization across different languages. This ultimately drives forward transparency and accountability in the design and deployment of LLMs. </p>
         </div>
       </div>
     </div>
@@ -182,7 +182,7 @@
 
           <div class="level-set has-text-justified">
             <p>
-              UniVaR is trained through a surrogate task, called value embedding learning, to learn a compact representation that contains maximized mutual information with value-relevant aspects of LLMs while discarding other confounding factors as much as possible. With the incorporation of value-eliciting QAs, UniVaR applies multi-view self-supervised learning by maximizing mutual information across views to ensure capturing the shared value-relevant aspects across the two views while excluding other non-shared factors.
+              The human value embedding is trained through a surrogate task, called value embedding learning, to learn a compact representation that contains maximized mutual information with value-relevant aspects of LLMs while discarding other confounding factors as much as possible. With the incorporation of value-eliciting QAs, the embedding applies multi-view self-supervised learning by maximizing mutual information across views to ensure capturing the shared value-relevant aspects across the two views while excluding other non-shared factors.
             <br>
             </p>
           </div>
@@ -204,7 +204,7 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <div class="content">
-          <h2 class="title is-3">UniVaR is not a Sentence Embedding
+          <h2 class="title is-3">It is not a Sentence Embedding
           </h2>
           <!-- <div class="level-set has-text-justified">
             <p>
@@ -216,7 +216,7 @@
           <div class="column">
             <img src="static/images/qa_pipeline.png" alt="experience" class="blend-img-background center-image" style="max-width: 90%; height: auto; margin-left: 5px; margin-bottom: 20px;" />
             <p>
-            To ensure minimal sharing of linguistics aspect across views, we translate all the value-eliciting QAs to English and perform paraphrasing to avoid language-specific markers and increase the linguistics diversity. UniVaR displays a strong capability surpassing all baselines by ~15% k-NN accuracy and 10-15% linear probing accuracy@10 on the LLM value identification task. While, word and sentence embedding representations perform poorly indicating that there are significant differences between value representations from UniVaR and existing embedding representations.
+            To ensure minimal sharing of linguistics aspect across views, we translate all the value-eliciting QAs to English and perform paraphrasing to avoid language-specific markers and increase the linguistics diversity. The embedding displays a strong capability surpassing all baselines by ~15% k-NN accuracy and 10-15% linear probing accuracy@10 on the LLM value identification task. While, word and sentence embedding representations perform poorly indicating that there are significant differences between value representations from the embedding and existing embedding representations.
             </p>
           </div>
           <!-- End new content -->
